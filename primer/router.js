@@ -1,9 +1,6 @@
-let route = (pathname, handle, res, postData) => {
-	console.log('~~~~!!!!!~~~~~')
-	console.log(postData)
-	console.log('~~~~!!!!!~~~~~')
+let route = (pathname, handle, req, res) => {
 	if (typeof handle[pathname] === 'function') {
-		handle[pathname](res, postData)
+		handle[pathname](req, res)
 	} else {
 		res.writeHead(404, {
 			'content-type': 'text-plain'

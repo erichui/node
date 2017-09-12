@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<style>
+  .test {
+    width: 100px;
+    height: 100px;
+  }
+
+  .test1 {
+    width: 200px;
+    height: 200px;
+  }
+</style>
+
+<body>
+  <pre><script>document.write('\u4f60sdfsdfsdf\rfsdfsdfs')</script></pre>
+  <pre>Started by user↵ ↵邢兵兵↵[EnvInject] - Loading</pre>
+  <div id="test"></div>
+</body>
+<script>
+  let str = '你好'
+  let str1 = str.charCodeAt(0).toString(16)
+  let ret = `\\u${new Array(5-str1.length).join(0)}${str1}`
+  console.log(ret)
+</script>
+
+</html>
