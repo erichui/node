@@ -29,4 +29,4 @@ let server = http.createServer((req, res) => {
   })
 })
 server.listen(PORT)
-console.log("Started by user 邢兵兵↵[EnvInject] - Loading")
+console.log('listening port 3030')
