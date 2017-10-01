@@ -10,11 +10,18 @@ module.exports = {
 				<title>Document</title>
 			</head>
 			<body>
+<<<<<<< Updated upstream
 				<form action="/upload" enctype="multipart/form-data"
 			    method="post">
 			    <input type="file" name="upload" multiple="multiple"><br>
 			    <input type="submit" value="Upload">
 		    </form>
+=======
+				<form action="/upload" method = 'post'>
+					<textarea name="textarea" id="" cols="30" rows="10" placeholder="qweqqqqq"></textarea>
+					<input type="submit" value="submit value">
+				</form>
+>>>>>>> Stashed changes
 			</body>
 			</html>
 		`
