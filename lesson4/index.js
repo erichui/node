@@ -5,6 +5,10 @@ let url = require('url')
 let path = require('path')
 let mime = require('./mime').types
 
+
+/*
+  创建服务器
+ */
 let server = http.createServer((req, res) => {
   let _url = url.parse(req.url)
   let pathname = _url.pathname
