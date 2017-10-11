@@ -1,5 +1,5 @@
 let http = require('http')
-const PORT = 4040
+const PORT = 5050
 let newObj = require('./getIp')
 let server = http.createServer((req, res) => {
   res.writeHead(200, {
